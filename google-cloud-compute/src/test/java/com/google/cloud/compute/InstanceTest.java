@@ -150,7 +150,7 @@ public class InstanceTest {
     assertEquals(NETWORK_INTERFACES, expectedInstance.getNetworkInterfaces());
     assertEquals(ATTACHED_DISKS, expectedInstance.getAttachedDisks());
     assertEquals(METADATA, expectedInstance.getMetadata());
-    assertEquals(LABELS, bucket.getLabels());
+    assertEquals(LABELS, expectedInstance.getLabels());
     assertEquals(SERVICE_ACCOUNTS, expectedInstance.getServiceAccounts());
     assertEquals(SCHEDULING_OPTIONS, expectedInstance.getSchedulingOptions());
     assertEquals(CPU_PLATFORM, expectedInstance.getCpuPlatform());

@@ -1731,12 +1731,6 @@ operation.waitFor();
     operation.waitFor();
     remoteInstance = compute.getInstance(instanceId);
     assertEquals(metadata, remoteInstance.getMetadata().getValues());
-    // test set labels
-    Map<String, String> labels = ImmutableMap.of("key", "value");
-    operation = remoteInstance.setLabels(labels);
-    operation.waitFor();
-    remoteInstance = compute.getInstance(instanceId);
-    assertEquals(labels, remoteInstance.getLabels().getValues());
     // test set machine type
     operation = remoteInstance.stop();
     operation.waitFor();
